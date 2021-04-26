@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(51, 170, 221);
+        }
+        div#content{
+            padding: 2% 5%;
+            background-color: white;
+            border-radius: 10px;
+        }
+        div#container{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        
+        div.container_image{
+            text-align: center;
+            color: gray;
+            font-size: small;
+        }
+        img{
+            border-radius: 10px;
+            border-style: solid;
+            
+        }
+        a{
+            text-decoration: none;
+            color: #0077bb;
+        }
+        p{
+            text-indent: 30px;
+            padding-left: 0px;
+            text-align: justify;
+        }
+        p.descricao{
+            text-align:center;
+        }
+        h3{
+            padding-left: 0px;
+            font-family: Snell Roundhand, cursive;
+        }
+        code{
+            padding: 2px 5px;
+            border-width: 0;
+            border-radius: 2px;
+            background-color: #cdd0d1;
+            font-family: monospace;
+        }
+        @media (pointer: coarse) {
+            div#content { width: 100%; }
+            img{
+                width: 100%;
+            }
+        }
+        @media (pointer: fine) {
+            div#content { width: 60%; }
+        }
+    </style>
+
+</head>
+<body>
+    <div id="container">
+        <div id="content">
+            <h3>História</h3>
+            <p>O Arch Linux é uma disdribuição GNU/Linux de uso geral desenvolvida à princípio pelo programador canadense Judd Vinet, hoje é mantida pela própria comunidade Arch. Seu lançamento foi em 11 de março de 2002, quando Judd, inspirado principalmente nos sistemas Slackware, BSD, PLD Linux e CRUX, construiu sua própria distribuição com princípios similares àquelas distros, porém, desapontado com a falta de gerenciamento de pacotes na época, escreveu um gerenciador de programadas chamado pacman, hoje ainda usado no Arch Linux para a instalação de pacotes.</p>
+
+            <div class="container_image">
+                <img src="https://usesthis.com/images/interviews/judd.vinet/portrait.jpg" alt="não foi possível exibir imagem" width="30%">
+                <br>
+                <p class="descricao">Judd Vinet, o criador do Arch Linux</p>
+            </div>
+        
+            <p> Desde então a comunidade cresceu firmemente, desde o começo sendo reconhecida como comunidade aberta, amigável e prestativa. No fim de 2007, Judd Vienet se afastou da participação ativa como desenvolvedor Arch, e transferiu a direção do projeto ao programador Aaron Griffin, porém, mais a frente, no início de 2020, em um esforço coletivo, a equipe do Arch Linux desenvolveu um novo processo para determinar futuros líderes, e como Griffin decidiu deixar o cargo, uma votação foi realizada para eleger uma nova pessoa para substituí-lo e, em 2020-02-24, seus resultados foram publicados, oficializando a eleição de Levente Polyak.
+            </p>
+        
+            <h3>Introdução ao Arch Linux</h3>
+
+            <p>
+                Arch Linux é uma distribuição Linux para computadores com processadores x86-64. Ele segue o princípio KISS ("Keep It Simple, Stupid", ou "Mantenha isso simples, estúpido"), ou seja, visa a simplicidade. Isso se traduz à uma alta fidedignidade ao que o desenvolvedor original criou, com poucas alterações específicas da distro. Exatamente por isso o Arch vem com somente o necessário, sendo o usuário o responsável pelas customizações específicas para ele. Esse cenário gera uma real, porém pejorativa fama de <strong>difícil</strong>, de fato o Arch não foi feito para agradar o público como um todo, mas essa complexidade se traduz num domínio muito maior por parte do usuário sobre o sistema, onde não vão existir pacotes, drivers ou softwares no geral que não estão sendo usados ou que não são do conhecimento do administrador.
+            </p>
+
+            <div class="container_image">
+                <img src="https://miro.medium.com/max/5120/1*5QMPodzpjSIRIlcqmBqyVA.png" alt="não foi possível exibir imagem" width="45%">
+                <br>
+                <p class="descricao">Filosofia do Arch "Made It Simple"</p>
+            </div>
+
+            <p>
+                A filosofia do Arch Linux é baseada em 5 pontos principais: simplicidade, modernidade, pragmatismo, centralidade no usuário e versatilidade.
+            </p>
+            
+            <ol>
+                <li>
+                    <h4>Simplicidade:</h4>
+                    <p>
+                        O Arch Linux dá grande importância à simplicidade do sistema, sem adições ou modificações desnecessárias. Em geral tende a prover softwares conforme os originais, com poucas alterações específicas da distribuição, alterações ou correções não aceitos pelos originais são evitados, sendo essas alterações específicas do Arch quase que em sua totalidade correções de bugs passados que são obsoletos para o próximo lançamento.
+                    </p>
+                </li>
+                <li>
+                    <h4>Modernidade:</h4>
+                    <p>
+                        O Arch se dedica em oferecer versões mais recentes e estáveis de seus pacotes, desde que não haja uma "quebra sistêmica" entre as versões. Ele é baseado na ideia de <a href="https://pt.wikipedia.org/wiki/Rolling_release">lançamento contínuo</a>, que se refere a um sistema de software que é instalado uma vez e continuamente atualizado. Essa distro também incorpora muitas novas funcionalidades para usuários GNU/Linux, como os: sistema de inicialização systemd, sistemas de arquivos modernos, LVM2, RAID via software, suporte ao udev e initcpio além dos últimos kernels.
+                    </p>
+                </li>
+                <li>
+                    <h4>Pragmatismo:</h4>
+                    <p>
+                        O pragmatismo, ao contrário da ideologia se restringe à objetividade, de forma que a resolução de um serto problema é dada através de seu exito. Da mesma forma os princípios do Arch são apenas diretrizes úteis, sem nenhuma carga ideológica. Em última análise, decisões de design dentro da distro são feitas caso a caso pelo consenso de desenvolvedores. Análise técnica baseada em evidências e debate são o que importam, não políticas e opinião popular. Portanto, os repositórios do Arch Linux oferecem tanto software livre de código aberto como os proprietários, para tanto os que preferem funcionalidade quanto os que preferem software livre.
+                    </p>
+                </li>
+                <li>
+                    <h4>Centralidade no usuário:</h4>
+                    <p>
+                        Ao contrário da maioria das outras distribuições que pretendem ser "user friendly", ou seja, ter uma interface amigável ao usuário, o Arch Linux é "user centric", ou seja, coloca o usuário como centro. Ele é voltado principalmente para usuários Linux avançados ou que são adeptos do "faça você mesmo", sendo que o usuário tem domínio sobre todo o sistema, sem nada rodando por baixo dos panos. Portanto caso haja algum tipo de problema, é incentivado que o próprio usuário leia a documentação e resolva por si mesmo, por este e por outros que ele tem a própria Wiki, a famosa <a href="https://wiki.archlinux.org/">ArchWiki</a>, onde se encontra a documentação do Arch além de conceitos que escapam do próprio Arch Linux em si mas tem relação com o mundo Linux como um todo.
+                    </p>
+                </li>
+                <li>
+                <h4>Versatilidade:</h4>
+            
+                    <p>
+                        O Arch Linux é uma distribuição de propósito geral. Na instalação, apenas um ambiente de linha de comando é fornecido ao usuário, de forma que ele tem o controle de como quer personalizar seu ambiente desktop, sendo disponíveis a ele milhares de pacotes de alta qualidade fornecidos nos repositórios oficiais para a arquitetura x86-64.
+                    </p>
+
+                    <div class="container_image">
+                        <img src="https://i.ytimg.com/vi/qh9y5X3b4fM/maxresdefault.jpg" alt="não foi possível exibir imagem" width="60%"><br>
+                        <p class="descricao">Ambiente de linha de comando padrão do Arch Linux.</p>
+                    </div>
+
+                    <p>
+                        Ele funciona com o gerenciador de pacotes pacman, simples, leve e rápido que permite atualizar todo o sistema com apenas um comando. Ele também fornece o Arch Build System, um sistema <i>ports like</i> para compilar e empacotar software a partir do código-fonte. Enquanto o pacman é a ferramenta especializada do Arch para gerenciamento de pacote binário (incluindo pacotes compilados com o ABS), ABS é uma coleção de ferramentas para compilar o fonte em pacotes <code>.pkg .tar .xz</code> instaláveis.
+                    </p>
+                    
+                    <p> 
+                        Além disso, o Arch User Repository contém muitos milhares mais de scripts PKGBUILD contribuídos pela comunidade para compilar pacotes instaláveis a partir dos fontes usando o aplicativo makepkg. Também é possível para usuários compilar e manter seus próprios repositórios personalizados com facilidade.
+                    </p>
+                </li>
+            </ol>
+            <h3>Bibliografia</h3>
+            <ul>
+                <li><a href="https://wiki.archlinux.org/">ArchWiki</a></li>
+                <li><a href="https://pt.wikipedia.org/wiki/Rolling_release">Wikipedia - Rolling_release</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Arch_Linux">Wikipedia - Arch_Linux</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
